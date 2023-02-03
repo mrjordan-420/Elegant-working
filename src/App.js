@@ -1,23 +1,16 @@
 import logo from './logo.svg';
 import './App.css';
+import "bootstrap/dist/css/bootstrap.min.css";
+import Home from './components/home';
+
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <video autoPlay muted loop id="video">
+        <source src="https://res.cloudinary.com/dtnfcxvpg/video/upload/v1640875146/pexels-kelly-lacy-5514362_owb1q9.mp4" type="video/mp4" />
+      </video>
+      <Home />
     </div>
   );
 }
