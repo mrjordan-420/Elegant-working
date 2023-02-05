@@ -1,15 +1,18 @@
-import React from "react";
-
+import { React, useEffect } from "react";
+import { Link, Router, BrowserRouter, useFetcher } from "react-router-dom";
+import { useNavigate } from "react-router-dom";
 
 const Home = () => {
+    const navigate = useNavigate()
+
     return (
         <div className="container-fluid home-class">
             <div className="row">
                 <div className="col">
                     <ul className="nav nav-class">
-                        <li className="nav-item"><button className="btn">About</button></li>
-                        <li className="nav-item"><button className="btn">Get Started!</button></li>
-                        <li className="nav-item"><button className="btn">Contact</button></li>
+                        <li className="nav-item"><button className="btn" onClick={() => { navigate('/about') }}>About</button></li>
+                        <li className="nav-item"><button className="btn" onClick={() => { navigate('/get-started') }}>Get Started!</button></li>
+                        <li className="nav-item"><button className="btn" onClick={() => { navigate('/contact') }}>Contact</button></li>
                     </ul>
                 </div>
             </div>
@@ -23,3 +26,6 @@ const Home = () => {
 }
 
 export default Home
+
+
+// onClick={() => navigate('/About')}

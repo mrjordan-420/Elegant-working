@@ -27,7 +27,27 @@ html {
   display: grid;
   grid-template-rows: min-content auto;
 }
-
+.about-page {
+  display: flex;
+  width: 300px;
+  position: absolute;
+  color: white;
+  top: 50%;
+  left: 50%;
+  right: 50%;
+  margin: -50px 0 0 -50px;
+  justify-content: center;
+}
+div a {
+  display: contents;
+}
+button.btn a {
+  color: white;
+}
+button.btn a:hover {
+  background-color: white;
+  color: #406042;
+}
 .nav-class {
   display: flex;
   justify-content: center;
